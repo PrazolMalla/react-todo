@@ -12,7 +12,7 @@ function Form(props){
     }
     return(
         <form onSubmit={handleSubmit}>
-          <input type="text" name="task" id="task" autoComplete='off' value={name} onChange={handleChange}/>
+          <input type="text" name="task" id="task" autoComplete='off' value={name} onChange={handleChange} required/>
           <input type="submit" id ="submit" value="submit"/>
         </form>
     )

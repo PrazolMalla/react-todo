@@ -68,6 +68,8 @@ ul li input[type="checkbox"]{
     margin-left: -20px;
 }
 
+
+
 /*
 ul li label{
     width: 1.25rem;
@@ -106,9 +108,32 @@ ul li input[type="checkbox"]:checked + label::after{
 .delete{
     background-color: transparent;
     border: none;
-    margin-left: 250px;
 }
 
+li{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left:10px ;
+    margin-left: 200px;
+}
+.underline{
+    text-decoration: line-through;
+}
+ul{
+    display: flex;   
+    flex-direction: column;
+
+}
+
+.normal{
+    text-decoration: none;
+}
 ul li p{
     /* margin-left: -20px; */
     font-size: 14px;
