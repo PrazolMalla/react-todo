@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import'./index.css';
 
 function Form(props){
     const [name,setName]  = useState("");
@@ -12,8 +13,8 @@ function Form(props){
     }
     return(
         <form onSubmit={handleSubmit}>
-          <input type="text" name="task" id="task" autoComplete='off' value={name} onChange={handleChange} required/>
-          <input type="submit" id ="submit" value="submit"/>
+          <input className=" w-72 bg-input-box rounded-3xl h-9 p-3 text-sm font-light active:border-none" type="text" name="task"  autoComplete='off' value={name} onChange={handleChange} required/>
+          <input className=" bg-btn-color py-2 px-6 text-white text-sm font-light rounded-3xl ml-[-2rem]" type="submit" id ="submit" value="submit"/>
         </form>
     )
 }

@@ -1,4 +1,4 @@
-import './style.css'
+import './index.css'
 import Todo from './components/Todo'
 import { useState } from 'react'
 import Form from './Form'
@@ -47,8 +47,8 @@ function App(props){
     />
   ));
   return(
-      <div className='container'>
-        <h1>To-Do List 📃</h1>
+      <div className='flex flex-col w-[25rem] font-primary font-semibold bg-white p-5 rounded-lg '>
+        <h1 className=' text-text-color text-2xl mb-3 '>To-Do List 📃</h1>
           <Form addTask = {addTask}></Form>
           <ul 
             role=''
